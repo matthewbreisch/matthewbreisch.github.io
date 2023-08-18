@@ -1529,7 +1529,7 @@ a {
 		-webkit-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
-		background-color: rgba(0, 0, 0, 0.89); /* Button Background */
+		background-color: rgb(0, 0, 0); /* Button Background */
 		border: 0;
 		border-radius: 0.25rem;
 		box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.45); /* button outline button box */
@@ -1678,22 +1678,30 @@ a {
 		}
 
 
-
-
-
-
-
-
-
 		input[type="submit"].primary,
 		input[type="reset"].primary,
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: white;
-			box-shadow: none;
-			color: #2e2b37 !important;
+			font-size: 0.5rem;
+			height: 1.875rem;
+			line-height: 1.875rem;
+			padding: 0 1.25rem 0 1.4rem;
+			background-color: rgba(255, 255, 255, 0.100);
+			box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.450); /* button outline button box */
+			color: #87fd00 !important;
 		}
+
+		input[type="submit"].primary:hover,
+		input[type="reset"].primary:hover,
+		input[type="button"].primary:hover,
+		button.primary:hover,
+		.button.primary:hover {
+			box-shadow: inset 0 0 0 1px rgb(255, 255, 255); /* button outline */
+			color: rgb(255, 255, 255) !important; /* Button Text */
+			background-color: rgba(0, 0, 0, 0); /* Button Background */
+		}
+
 
 			input[type="submit"].primary.color1,
 			input[type="reset"].primary.color1,
@@ -1727,13 +1735,7 @@ a {
 				color: #353865 !important;
 			}
 
-			input[type="submit"].primary:hover,
-			input[type="reset"].primary:hover,
-			input[type="button"].primary:hover,
-			button.primary:hover,
-			.button.primary:hover {
-				background-color: #ffe4b4;
-			}
+
 
 			input[type="submit"].primary:active,
 			input[type="reset"].primary:active,
@@ -2865,7 +2867,7 @@ a {
 			background-color: #ffffff23;
 		}
 
-		.panel.color111reverse {
+		.panel.color111reverse1 {
 			background-image: url("../../images/overlay.png"), linear-gradient(90deg, 
 			 rgba(176, 48, 226, 0.185) 1%, 
 			 rgba(235, 5, 78, 0.281) 50%, 
@@ -2876,7 +2878,7 @@ a {
 		.panel.color111reverse {
 			background-image: url("../../images/overlay.png"), linear-gradient(90deg, 
 			 rgba(176, 48, 226, 0.185) 1%, 
-			 rgba(235, 5, 78, 0.582) 50%, 
+			 rgba(235, 5, 78, 0.550) 50%, 
 			 rgba(235, 5, 78, 0.068)99%);
 			background-size: 128px 128px, auto;
 			background-color: #ffffff23;
@@ -3023,7 +3025,14 @@ a {
 
 
 
-
+		.panel.colortableofcontents {
+			background-image: url("../../images/overlay.png"), linear-gradient(90deg, 
+			rgba(255, 0, 149, 0.1) 6%, 
+			rgba(0, 170, 255, 0.1) 60%, 
+			rgba(255, 0, 149, 0.1) 94%);
+			background-size: 128px 128px, auto;
+			background-color: #ffffff22;
+		}
 
 
 
@@ -3035,7 +3044,7 @@ a {
 			background-color: #00000000;
 		}
 
-		.panel.colortableofcontents {
+		.panel.colortableofcontentsoriginal {
 			background-image: url("../../images/overlay.png"), linear-gradient(90deg, rgba(0, 0, 0, 0.514) 6%, rgba(131, 0, 131, 0.308) 60%, rgba(0, 0, 0, 0.514) 94%);
 			background-size: 128px 128px, auto;
 			background-color: #ffffff00;
@@ -3048,6 +3057,7 @@ a {
 		}
 
 
+
 		.panel.colortableofcontents1 {
 		background: linear-gradient(90deg, 
 		rgba(255, 0, 149, 0.05) 15%, 
@@ -3055,6 +3065,8 @@ a {
 		rgba(255, 0, 149, 0.05) 99%), 
 		rgba(0, 0, 0, 0.725);
 		}
+
+
 
 
 
