@@ -68,22 +68,33 @@ input, select, textarea {
 
 /* Basic */
 
-ul.right-align {
-	text-align: right;
-}
 
-ul.right-align li {
-	text-align: right;
-}
 
-ul.left-align {
-	text-align: left;
-}
+						#expand-box {
+						width: 100%;
+						padding: 0;
+						border-top: 1px solid rgba(255, 255, 255, 0.00);
+						border-bottom: 1px solid rgba(255, 255, 255, 0.00);
+						margin: 7px 0 0 0;}
+						
+						#expand-box-header {
+						background: linear-gradient(90deg, 
+						rgba(255, 0, 149, 0.000) 1%, 
+						rgba(0, 191, 255, 0.090) 30%, 
+						rgba(255, 0, 149, 0.025) 99%), 
+						rgba(255, 255, 255, 0.000);
+						margin: 0;
+						color: #2f00ff; /* text color */
+						padding: 1em 0em 0em 0.5em;}
+						
+						#expand_box_sub_header { clear: both; }
+						.clearfix:after { content: "\00A0"; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;}  
+						.clearfix{ display: inline-block;}  
+						html[xmlns] .clearfix { display: block;}  
+						* html .clearfix{ height: 1%;}  
+						.clearfix {display: block}  
 
-ul.left-align li {
-	text-align: left;
-}
-
+						
 
 	html {
 		box-sizing: border-box;
@@ -176,9 +187,9 @@ ul.left-align li {
 
 
 
-								/* Typography kerr hover over links link hover links hover header links hover button problem 255, 0, 170 fuck 255, 16, 240 */
+								/* Typography kerr hover over links link hover links hover header links hover button problem fuck */
 								a:hover {
-								color: rgb(255, 16, 240) !important;
+								color: rgb(255, 184, 237) !important;
 								font-size: 100%;
 								border-bottom-color: transparent;
 								}
@@ -214,63 +225,47 @@ ul.left-align li {
 			border: 0;
 		}
 
+	h2 {
+		font-size: 2em;
+		line-height: 1.5em;
+		letter-spacing: -0.025em;
+	}
 
 
 
-
-								/* Typography kerr title main page font main header text header text */
-								h2 {
-									font-size: 1em;
-									color: rgba(241, 255, 252, 0.856);
-									line-height: 2em;
-									letter-spacing: inherit;
-									font-weight: 100;
-									margin: .6em 1em 0em 1em;
-								}
-
-
-								
 
 
 								/* Typography kerr title main page font main title banner text main text */
 								h3 {
-									font-size: 1.35em;
-									font-weight: 100;
-									line-height: 0.75em;
-									color: rgba(241, 255, 252, 0.856);
-									letter-spacing: inherit;
+								font-size: 1.35em;
+								font-weight: 100;
+								line-height: 0.75em;
+								color: rgba(241, 255, 252, 0.856);
+								letter-spacing: inherit;
 								}
 
-								h4 {
-									font-size: 1.66em;
-									font-weight: 100;
-									line-height: 1.25em;
-									color: rgba(241, 255, 252, 0.856);
-									letter-spacing: inherit;
-									margin: 0em 0em 0em 0.5em;
-								}
 
-								h5 {
-									font-size: 1.66em;
-									font-weight: 100;
-									line-height: 1.25em;
-									color: rgba(241, 255, 252, 0.856);
-									letter-spacing: inherit;
-									margin: 0 0 0em -0.45em;
-								}
+
+
+	
+	h4 {
+		font-size: 1.1em;
+		line-height: 1.5em;
+	}
+
+	h5 {
+		font-size: 0.9em;
+		line-height: 1.5em;
+	}
 
 								h6 {
-									font-size: 1.66em;
-									font-weight: 100;
-									line-height: 2em;
-									color: rgba(241, 255, 252, 0.856);
-									letter-spacing: inherit;
-									margin: 0 0 0em 0em;
+								font-size: 0.8em;
+								font-weight: 100;
+								line-height: 1em;
+								color: rgba(241, 255, 252, 0.856);
+								letter-spacing: inherit;
+								margin: 0 0 1em 0;
 								}
-
-
-
-
 
 	sub {
 		font-size: 0.8em;
@@ -2580,10 +2575,10 @@ ul.left-align li {
 			}
 
 
-			/* Typography kerr twitter facebook whatsapp github icons */
+			/* Typography kerr twitter facebook icons */
 			.icon.alt:before {
-				color: rgba(255, 255, 255, 0) !important;
-				text-shadow: 1px 0 0 rgba(255, 0, 149, 0.603), -1px 0 0 rgba(0, 255, 213, 0.5), 0 .5px 0 rgba(55, 0, 255, 0.384), 0 -.5px 0 rgba(212, 0, 255, 0.404);
+				color: #ff0062 !important;
+				text-shadow: 1px 0 0 #00ff4c, -1px 0 0 #ff0000, 0 1px 0 #3700ff, 0 -1px 0 #000000;
 			}
 
 		.icon.major {
@@ -2949,7 +2944,7 @@ table {
 		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-		background-color: rgb(0, 0, 0); /* Button Background */
+		background-color: rgba(0, 0, 0, 0.89); /* Button Background */
 		border-radius: 0.25rem;
 		border: 0;
 		box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.45); /* Button box button outline */
@@ -3293,7 +3288,7 @@ table {
 								/* kerr sidebar indent panel spacing sides */
 								.spotlight.left .content, .spotlight.right .content {
 								height: 101%;
-								padding: 6em 4em;
+								padding: 6em 5em;
 								top: 0;
 								width: 28em;
 								}
@@ -3410,9 +3405,9 @@ table {
 			.wrapper.style2 input[type="reset"]:active,
 			.wrapper.style2 input[type="button"]:hover,
 			.wrapper.style2 input[type="button"]:active,
-			.wrapper.style2 .button:hover,														/* contact buttons contact */
+			.wrapper.style2 .button:hover,
 			.wrapper.style2 .button:active {
-				background-color: rgba(255, 255, 255, 0) !important;
+				background-color: rgba(255, 255, 255, 0.075) !important;
 				box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5) !important;
 				color: #ffffff !important;
 			}
@@ -3574,7 +3569,7 @@ margin-top: 0;
 				#00aaff00 50%, 
 				#00000060 99%), 
 				#ffffff00;
-				box-shadow: 0em 0em .666em 0em rgba(255, 255, 255, 0.666);
+				box-shadow: 0 0 0.5em 0 rgba(255, 255, 255, 0.568);
 				cursor: default;
 				height: 3.5em;
 				left: 0;
@@ -3778,25 +3773,21 @@ background-attachment: scroll;
 
 
 
-								/* Footer box-shadow: 0em 0em .666em 0em rgba(255, 255, 255, 0.666); kerr footer bar footer color scroll down a few lines here for changing screen sizes */
+								/* Footer kerr footer bar color scroll down a few lines here for changing screen sizes */
 
 								#footer {
 									background: linear-gradient(90deg, 
-									rgba(51, 0, 30, 0.1) 15%, 
-									rgba(0, 170, 255, 0.1) 50%, 
-									rgba(51, 0, 30, 0.1) 98%), 
-									rgba(0, 0, 0, 0.706);
-									padding: .2em 0;
+									#ff009521 15%, 
+									#00aaff28 50%, 
+									#ff00dd27 98%), 
+									#000000b4;
+									padding: 0.5em 0;
 									text-align: center;
-									box-shadow: 0em 0em .666em 0em rgb(0, 0, 0);
-									width: 100%;
 								}
 
 								#footer .icons .icon.alt {
 								text-decoration: none;
 								}
-
-
 
 
 
