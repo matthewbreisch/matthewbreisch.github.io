@@ -1565,12 +1565,17 @@ a {
 		button:active,
 		.button:active {
 			background: linear-gradient(90deg, 
-			rgba(255, 248, 252, 0.305) 1%, 
-			rgb(0, 0, 0) 50%, 
-			rgba(255, 248, 252, 0.305) 99%), 
-			rgba(0, 0, 0, 0.103);
+			rgba(0, 0, 0, 0.600) 30%, 
+			rgba(255, 255, 255, 0.6) 50%, 
+			rgba(0, 0, 0, 0.600) 70%), 
+			rgba(0, 0, 0, 0);
+		box-shadow: 
+			0.3em 0em 0.3em 0em rgba(0, 0, 0, 0.666), /* Right shadow */
+			0em 0.3em 0.3em 0em rgba(0, 0, 0, 0.666), /* Bottom shadow */
+			inset 0em 0em 0em 1px rgb(255, 255, 255);
 	}
 
+	
 		input[type="submit"].icon:before,
 		input[type="reset"].icon:before,
 		input[type="button"].icon:before,
@@ -3855,7 +3860,7 @@ a {
 			-webkit-justify-content: center;
 			-ms-justify-content: center;
 			justify-content: center;
-			padding: 3.5rem 3.5rem 2rem 3.5rem ;
+			padding: 0rem 0rem 0rem 0rem ;
 		}
 
 		.panel.spotlight .image {
@@ -3995,6 +4000,16 @@ a {
 
 /* Wrapper box-shadow box shadow glow panel long panel main panel kerr */
 
+
+	.image-container { /* I added this to try new panel sizes - phone screen size is broken */
+		max-width: 100%;
+	}
+
+	.image-container img {
+		width: 100%;
+		height: auto;
+	} /* I added this to try new panel sizes - phone screen size is broken */
+
 	#wrapper {
 		display: -moz-flex;
 		display: -webkit-flex;
@@ -4014,7 +4029,7 @@ a {
 		transition-delay: 0.25s;
 		cursor: default;
 		position: relative;
-		height: 35rem;
+		height: 35rem; /* Wrapper box-shadow box shadow glow panel long panel main panel kerr panel height */
 		box-shadow: 0 2rem 3rem .25rem rgba(255, 255, 255, 0.404);
 	}
 
