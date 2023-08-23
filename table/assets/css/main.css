@@ -23,6 +23,11 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
+
+section {
+	scroll-snap-align: start;} /* scroll snap */
+
+
 body {
 	line-height: 1;
 }
@@ -87,6 +92,7 @@ ul.left-align li {
 
 	html {
 		box-sizing: border-box;
+		scroll-snap-type: y proximity; /* scroll snap proximity or mandatory */
 	}
 
 	*, *:before, *:after {
@@ -98,11 +104,22 @@ ul.left-align li {
 	/* Basic kerr default background color master background global background background everything */
 	html, body {
 		background: linear-gradient(90deg, 
+		rgb(17, 0, 10, 0.050) 15%, 
+		rgba(0, 170, 255, 0.05) 50%, 
+		rgb(17, 0, 10, 0.050) 99%), 
+		rgba(0, 0, 0, 0.725);
+	}
+
+
+/* Basic kerr default background color master background 
+	html, body {
+		background: linear-gradient(90deg, 
 		rgba(255, 0, 149, 0.05) 15%, 
 		rgba(0, 170, 255, 0.05) 50%, 
 		rgba(255, 0, 149, 0.05) 99%), 
 		rgba(0, 0, 0, 0.725);
 	}
+global background background everything */
 
 	body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 		-moz-animation: none !important;
@@ -115,7 +132,7 @@ ul.left-align li {
 		transition: none !important;
 	}
 
-								/* Define the common border style for all images */
+								/* kerr code - Define the common border style for all images */
 								.bordered-image {
 									max-width: 15em;
 									height: auto;
@@ -738,6 +755,8 @@ ul.left-align li {
 		margin: 0 auto;
 		max-width: calc(100% - 4em);
 		width: 70em;
+		/*scroll 	scroll-snap-type: y mandatory;
+					overflow-y: scroll; 			snap */
 	}
 
 		.container.xsmall {
@@ -2985,10 +3004,14 @@ table {
 	input[type="button"]:active,
 	.button:active {
 		background: linear-gradient(90deg, 
-			rgba(255, 248, 252, 0.305) 1%, 
-			rgb(0, 0, 0) 50%, 
-			rgba(255, 248, 252, 0.305) 99%), 
-			rgba(0, 0, 0, 0.103);
+			rgba(0, 0, 0, 0.600) 30%, 
+			rgba(255, 255, 255, 0.6) 50%, 
+			rgba(0, 0, 0, 0.600) 70%), 
+			rgba(0, 0, 0, 0);
+		box-shadow: 
+			0.3em 0em 0.3em 0em rgba(0, 0, 0, 0.666), /* Right shadow */
+			0em 0.3em 0.3em 0em rgba(0, 0, 0, 0.666), /* Bottom shadow */
+			inset 0em 0em 0em 1px rgb(255, 255, 255);
 	}
 	
 	
@@ -3778,17 +3801,17 @@ background-attachment: scroll;
 
 
 
-								/* Footer box-shadow: 0em 0em .666em 0em rgba(255, 255, 255, 0.666); kerr footer bar footer color scroll down a few lines here for changing screen sizes */
+								/* Footer box-shadow: 0em 0em .666em 0em rgba(255, 255, 255, 0.666); kerr footer bar footer bar color scroll down a few lines here for changing screen sizes */
 
 								#footer {
 									background: linear-gradient(90deg, 
-									rgba(51, 0, 30, 0.1) 15%, 
-									rgba(0, 170, 255, 0.1) 50%, 
-									rgba(51, 0, 30, 0.1) 98%), 
+									rgba(0, 0, 0) 20%, 
+									rgba(0, 31, 46, 0.363) 50%, 
+									rgb(0, 0, 0) 80%), 
 									rgba(0, 0, 0, 0.706);
 									padding: .2em 0;
 									text-align: center;
-									box-shadow: 0em 0em .666em 0em rgb(0, 0, 0);
+									box-shadow: 0em 0em 1em 0em rgb(0, 0, 0);
 									width: 100%;
 								}
 
