@@ -2983,6 +2983,72 @@ a {
 
 
 
+
+
+
+
+
+		.panel.colorboat {
+			background-image: url("../../images/overlay.png"), linear-gradient(90deg, 
+			rgba(162, 19, 19, 0.699) 0%, 
+			rgba(102, 10, 10, 0.582) 50%, 
+			rgba(171, 100, 0, 0.700) 100%);
+			background-size: 128px 128px, auto;
+			background-color: #ffffff15;
+		}
+
+		.panel.colorboatreverse {
+			background-image: url("../../images/overlay.png"), linear-gradient(90deg, rgba(162, 19, 19, 0.699) 0%, rgba(102, 10, 10, 0.5) 50%, rgba(171, 100, 0, 0.233) 100%);
+			background-size: 128px 128px, auto;
+			background-color: #ffffff36;
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+		.panel.colorpolice {
+			background-image: url("../../images/overlay.png"), linear-gradient(90deg,
+			 rgba(0, 0, 0, 0.100) 1%, 
+			 rgba(255, 255, 255, 0.200) 50%, 
+			 rgba(0, 0, 0, 0.100) 99%);
+			background-size: 128px 128px, auto;
+			background-color: #ffffff15;
+		}
+
+		.panel.colorpolicereverse {
+			background-image: url("../../images/overlay.png"), linear-gradient(90deg, 
+			rgba(0, 0, 0, 0.100) 1%, 
+			rgba(255, 255, 255, 0.200) 50%, 
+			rgba(0, 0, 0, 0.100) 99%);
+			background-size: 128px 128px, auto;
+			background-color: #ffffff00;
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		.panel.colorclemente {
 			background-image: url("../../images/overlay.png"), linear-gradient(90deg, rgba(0, 17, 9, 0.158) 20%, rgba(0, 255, 157, 0.212) 50%, rgb(0, 0, 0, 0.274)95%);
 			background-size: 128px 128px, auto;
